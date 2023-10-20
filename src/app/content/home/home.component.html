@@ -1,0 +1,11 @@
+<div class="product-list">
+  <div class="product" *ngFor="let product of products">
+    <img ngSrc="./assets/bijoux_crafts_logo.jpg" alt="{{ product.name }}" height="445" width="827">
+    <h2>{{ product.name }}</h2>
+    <p>{{ product.description }}</p>
+    <p>Price: ${{ product.price }}</p>
+    <div class="card">
+      <i class="fa fa-shopping-cart" (click)="addToBasket(product)"></i>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,43 @@
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 40px;
+  margin: 40px;
+  min-height: 630px;
+}
+
+.product {
+  border: 2px solid #ccc;
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.product:hover {
+  border: 2px solid #818181;
+}
+
+.product img {
+  max-width: 100%;
+  height: auto;
+}
+
+.product p{
+  margin: 12px 0;
+}
+
+.card {
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.card i {
+  margin-top: 12px;
+
+}
+
+.card i:hover{
+  cursor: pointer;
+}
